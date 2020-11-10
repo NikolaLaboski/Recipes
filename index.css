@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: fantasy;
+}
+
+.pocetna{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)), url(pancakes.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.navbar{
+    display:flex;
+    padding: 40px 120px;
+}
+
+.navlogo img{
+    width: 135px;
+}
+
+.navlinks{
+    flex: 1;
+}
+
+.navlinks ul{
+    margin-left: 50px;
+    display: inline;
+}
+
+.navlinks ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 25px;
+}
+
+.navlinks ul a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.navlinks ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #ff4f4f;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+
+.navlinks ul li:hover::after{
+    width: 100%;
+}
+
+.btn{
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 30%;
+    background: #ff4f4f;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navlinks .btn{
+    float: right;
+}
+
+.banner{
+    margin: 80px 130px;
+    color: #fff;
+}
+
+.banner h1{
+    font-size: 64px;
+    margin: 30px;
+}
+
+.banner h1 span{
+    color: #ff4f4f;
+}
+
+.verticalbar{
+    height: 100%;
+    background: #000;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.search-icon{
+    height: 60%;
+    width: 80px;
+}
+
+.search-icon .fa{
+    margin: 45px 23px;
+    display: block;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.social-icons{
+    height: 35%;
+    width: 80px;
+    background: #ff4f4f;
+    text-align: center;
+    padding-top: 27%;
+    bottom: 0;
+    position: absolute;
+}
+
+.social-icons .fa{
+    margin: 15px 23px;
+    display: block;
+    padding: 8px;
+}
+
+.navbar .fa{
+    display: none;
+}
+
+@media (max-width: 700px){
+    .verticalbar{
+        display: none;
+    }
+    .banner{
+        margin: 80px 40px;
+    }
+    .banner h1{
+        font-size: 50px;
+    }
+    .navbar{
+        padding: 10px 20px;
+    }
+    .fa-bars{
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+    .navbar .fa{
+        display: block;
+        color: #fff;
+        margin: 10px 25px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .navlinks {
+        height: 100vh;
+        width: 200px;
+        background: #000;
+        top: 0;
+        right: -200px;
+        position: absolute;
+        text-align: left;
+        z-index: 2;
+    }
+    .navlinks ul a{
+        display: block;
+    }
+    .navlinks .btn{
+        float: none;
+        margin-left: 25px;
+        margin-top: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
